@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./styles/output.css" />
+
+  <title>Flashing Burguer - A melhor hamburgueria da cidade!</title>
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <img 
+        src="./assets/logo (4).png"
+        alt="Logo Flashing"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+      />
+      <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+        Flashing Burguer
+      </h1>
+
+      <span class="text-white font-medium">Rua Lasert 20, João Pessoa - PB</span>
+
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+        <span class="text-white font-medium">Seg á Dom - 18:00 as 23:00</span>
+      </div>
+
+    </div>
+  </header>
+  <!-- FIM HEADER -->
+  
+  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    Conheça nosso menu
+  </h2>
+
+  <!-- INICIO MENU -->
+  <div id="menu">
+    
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-1.png"
+          alt="Hamburuger Smash"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hamburguer Smash</p>
+          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 18.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hamburguer Smash"
+              data-price="18.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-2.png"
+          alt="Hamburuger Nordestino"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hamburger Nordestino</p>
+          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese temperada.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 32.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hamburuger Nordestino"
+              data-price="32.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-3.png"
+          alt="Hamburuger Master"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hamburger Master</p>
+          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 35.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hamburuger Master"
+              data-price="35.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->      
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-4.png"
+          alt="Hamburuger X-Tudão"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hamburger X-Tudão</p>
+          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 30</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hamburuger X-Tudão"
+              data-price="30"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+    </main>
+
+    <div class="mx-auto max-w-7xl px-2 my-2">
+      <h2 class="font-bold text-3xl">
+        Bebidas
+      </h2>
+    </div>
+
+    <!-- GRID BEBIDAS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+        
+      <!-- BEBIDA ITEM -->
+        <div class="flex gap-2 w-full">
+          <img 
+            src="./assets/refri-1.png"
+            alt="Coca lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+  
+          <div class="w-full">
+            <p class="font-bold">Coca lata</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6</p>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Coca lata"
+                data-price="6"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+  
+          </div>
+  
+        </div>
+        <!-- FIM BEBIDA ITEM --> 
+
+      <!-- BEBIDA ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./assets/refri-2.png"
+          alt="Guaraná lata"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Guaraná lata</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 6</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Guarana lata"
+              data-price="6"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM BEBIDA ITEM -->   
+
+      <!-- BEBIDA ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./assets/refri-3.png"
+          alt="Guaraná Kuat lata"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+      
+        <div class="w-full">
+          <p class="font-bold">Guaraná Kuat Lata</p>
+      
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 6</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Guaraná Kuat lata"
+              data-price="6"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+      
+        </div>
+      
+      </div>
+            <!-- FIM BEBIDA ITEM -->  
+
+      <!-- BEBIDA ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./assets/refri-4.png"
+          alt="Fanta lata"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Fanta Lata</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 6</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Fanta lata"
+              data-price="6"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM BEBIDA ITEM -->         
+
+      <!-- BEBIDA ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./assets/redbull.png"
+          alt="Red Bull lata"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Red Bull Lata</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 10</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Red Bull lata"
+              data-price="6"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM BEBIDA ITEM -->         
+
+      <!-- BEBIDA ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./assets/monster.png"
+          alt="Monster lata"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Monster Lata</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 10</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Monster lata"
+              data-price="6"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM BEBIDA ITEM -->
+
+       <!-- BEBIDA ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./assets/agua.png"
+          alt="Água Mineral 500ml"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Água Mineral 500ml</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 3</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Água Mineral 500ml"
+              data-price="6"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM BEBIDA ITEM -->         
+       <!-- BEBIDA ITEM -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./assets/h2o.png"
+          alt="H2oh 500ml"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">H2OH Limoneto 500ml</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 5</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="h2oh 500ml"
+              data-price="6"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM BEBIDA ITEM -->         
+
+    </div>
+    <!-- FIM GRID BEBIDAS -->
+
+  </div>
+  <!-- FIM MENU -->
+
+  <!-- MODAL CART -->
+<div id="cart-modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center" style="display: none;">
+  <div class="bg-white p-8 rounded-lg w-96">
+    <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-700">&times;</button>
+    <h2 class="text-lg font-medium mb-4">Seu Carrinho</h2>
+    <div id="cart-items"></div>
+    <div class="mt-4 flex justify-between items-center">
+      <span class="font-medium">Total:</span>
+      <span id="cart-total" class="font-medium">R$ 0,00</span>
+    </div>
+    <div class="mt-4">
+      <label for="address" class="block mb-2">Endereço:</label>
+      <input type="text" id="address" class="border border-gray-300 p-2 w-full rounded">
+      <p id="address-warn" class="text-red-500 hidden">Por favor, insira o endereço</p>
+    </div>
+    <button id="checkout-btn" class="mt-4 bg-blue-500 text-white p-2 w-full rounded">Finalizar Pedido</button>
+  </div>
+</div>
+  <!--MODAL CART-->
+
+  <!-- MODAL PAYMENT -->
+<div id="payment-modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center" style="display: none;">
+  <div class="bg-white p-8 rounded-lg w-96">
+    <button id="close-payment-modal-btn" class="absolute top-4 right-4 text-gray-700">&times;</button>
+    <h2 class="text-lg font-medium mb-4">Escolha o Método de Pagamento</h2>
+    <form id="payment-form">
+      <label for="payment-method">Método de Pagamento:</label>
+      <select id="payment-method" name="payment-method" class="border border-gray-300 p-2 w-full rounded mb-4">
+        <option value="credit">Cartão de Crédito</option>
+        <option value="debit">Cartão de Débito</option>
+        <option value="pix">PIX</option>
+      </select>
+
+      <div id="card-fields" class="hidden">
+        <label for="cardNumber">Número do Cartão:</label>
+        <input type="text" id="cardNumber" name="cardNumber" class="border border-gray-300 p-2 w-full rounded mb-4">
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" class="border border-gray-300 p-2 w-full rounded mb-4">
+
+        <label for="expirationMonth">Mês de Expiração:</label>
+        <input type="text" id="expirationMonth" name="expirationMonth" class="border border-gray-300 p-2 w-full rounded mb-4">
+
+        <label for="expirationYear">Ano de Expiração:</label>
+        <input type="text" id="expirationYear" name="expirationYear" class="border border-gray-300 p-2 w-full rounded mb-4">
+      </div>
+
+      <div id="pix-fields" class="hidden">
+        <div id="qrcode" class="mb-4"></div>
+      </div>
+
+      <button type="submit" class="bg-blue-500 text-white p-2 w-full rounded">Pagar</button>
+    </form>
+  </div>
+</div>
+  <!--FIM MODAL PAYMENT-->
+
+  <!-- BUTTON WHATSAPP -->
+  <div id="whatsapp-float-btn" class="float-btn" aria-label="Contato WhatsApp" role="button" tabindex="0">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+  <!--BUTTON WHATSAPP-->
+
+  <!-- BUTTON CART FOOTER -->
+  <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <button 
+      class="flex items-center gap-2 text-white font-bold"
+      id="cart-btn"
+    >
+      (<span id="cart-count">0</span>)
+      Veja meu carrinho
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+  <!-- FIM BUTTON CART FOOTER -->
+
+   <!-- Div onde o QR Code será gerado -->
+   <div id="qrcode"></div>
+    
+   <!-- Script para gerar o QR Code -->
+   <script type="text/javascript">
+       // Cria um QR Code com o link especificado
+       new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+   </script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
